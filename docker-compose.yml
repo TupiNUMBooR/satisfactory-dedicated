@@ -4,10 +4,10 @@ services:
     container_name: satisfactory-dedicated
     restart: unless-stopped
     ports:
-      - 15777:15777/udp
-      - 15000:15000/udp
-      - 7777:7777/udp
       - 7777:7777/tcp
+      - 7777:7777/udp
+      - 15000:15000/udp
+      - 15777:15777/udp
     volumes:
       - ./saves:/home/steam/.config/Epic/FactoryGame/Saved
       - ./steam:/home/steam/Steam

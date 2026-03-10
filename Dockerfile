@@ -12,6 +12,6 @@ USER ${USER}
 
 WORKDIR ${HOMEDIR}
 
-EXPOSE 15777/udp 15000/udp 7777/udp
+EXPOSE 7777/udp 7777/tcp 15000/udp 15777/udp
 
 CMD ["bash", "entry.sh"]
