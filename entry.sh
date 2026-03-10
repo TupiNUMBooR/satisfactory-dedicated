@@ -5,8 +5,7 @@ export LD_LIBRARY_PATH="${STEAMAPPDIR?}/linux64:${LD_LIBRARY_PATH:-}"
 
 bash ${STEAMCMDDIR}/steamcmd.sh \
   +login anonymous \
-  +app_update "${STEAMAPPID}" \
+  +app_update "${STEAMAPPID}" validate \
   +quit
-# validate
 
 exec "${STEAMAPPDIR}/FactoryServer.sh"
