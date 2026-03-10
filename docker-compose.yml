@@ -1,0 +1,18 @@
+services:
+  satisfactory:
+    image: tupinumboor/satisfactory-dedicated:latest
+    container_name: satisfactory-dedicated
+    restart: unless-stopped
+    ports:
+      - 15777:15777/udp
+      - 15000:15000/udp
+      - 7777:7777/udp
+      - 7777:7777/tcp
+    volumes:
+      - ./saves:/home/steam/.config/Epic/FactoryGame/Saved
+      - ./steam:/home/steam/Steam
+    build:
+      context: .
+      tags:
+        - "tupinumboor/satisfactory-dedicated:1.0"
+        - "tupinumboor/satisfactory-dedicated:latest"
