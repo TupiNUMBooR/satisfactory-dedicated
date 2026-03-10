@@ -1,6 +1,7 @@
 A Simple Satisfactory Dedicated Server
 
-`C:\Users\%USERNAME%\AppData\Local\FactoryGame\Saved\Config\Windows\Engine.ini`:
+[Engine.ini](C:\Users\%USERNAME%\AppData\Local\FactoryGame\Saved\Config\Windows\Engine.ini):
+
 ```
 [/Script/OnlineSubsystemUtils.IpNetDriver]
 MaxClientRate=120000
